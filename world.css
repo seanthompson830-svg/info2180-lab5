@@ -1,1 +1,139 @@
-/* Add your own styles */
+/* ---------- GLOBAL STYLE ---------- */
+
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background: #1e1f26;   /* dark navy-grey */
+    color: #e6e6e6;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+/* ---------- SEARCH CONTROLS ---------- */
+
+#controls {
+    margin-bottom: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+
+#controls label {
+    font-size: 16px;
+}
+
+.search-container {
+    position: relative;
+    display: inline-block;
+}
+
+.search-container input[type="search"] {
+    padding: 10px 35px 10px 12px;
+    width: 240px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: 1px solid #444;
+    background: #2a2c34;
+    color: #fff;
+}
+
+.search-container .search-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #9fa4b2;
+    font-size: 18px;
+}
+
+button {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    background: #3b82f6;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #2563eb;
+    transform: translateY(-1px);
+}
+
+/* ---------- TABLE STYLE ---------- */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: #2a2c34;
+    color: #e6e6e6;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #3a3d47;
+}
+
+thead {
+    background: #3b82f6;
+    color: white;
+}
+
+th, td {
+    padding: 14px 12px;
+    text-align: left;
+    border-bottom: 1px solid #3a3d47;
+}
+
+tbody tr:hover {
+    background: #383b46;
+}
+
+/* ---------- UL FALLBACK (Exercise 3 displays list) ---------- */
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul li {
+    background: #2a2c34;
+    padding: 8px 12px;
+    border-radius: 6px;
+    margin: 6px 0;
+    border: 1px solid #3a3d47;
+    width: fit-content;
+}
+
+/* ---------- RESPONSIVE DESIGN ---------- */
+@media (max-width: 700px) {
+    table, thead, tbody, th, td, tr {
+        display: block;
+        width: 100%;
+    }
+
+    th {
+        background: #3b82f6;
+        font-size: 14px;
+    }
+
+    td {
+        border: none;
+        padding: 10px 8px;
+        border-bottom: 1px solid #444;
+    }
+
+    tr {
+        margin-bottom: 10px;
+        background: #2a2c34;
+        border-radius: 6px;
+        padding: 10px;
+    }
+}
